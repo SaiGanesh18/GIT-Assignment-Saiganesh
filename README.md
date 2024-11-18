@@ -6,3 +6,4 @@ new changes to be commited into main branch
 new changes made in feature-1 branch cut from main branch
 
 new changes after merging feature-1 to main
+new changes in feature-2 branch
