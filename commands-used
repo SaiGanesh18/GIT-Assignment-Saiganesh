@@ -1,0 +1,64 @@
+Commands used
+
+1)Create a repository in Github
+Did it in Github website, git tool was already present in Mac so, git clone <url_for_repository> command was used to clone the created repository in local
+
+2)Add a commit to main branch
+Changes were made to README.md file
+git add README.md command was used to stage the change
+git commit -m “<message>” command was used to commit the change to the git tool
+git push origin main command to push the changes to repository
+
+3)Create a feature-1 branch from the main
+Check current branch using git branch
+If current branch is main, create a new branch using git branch feature-1 command
+
+4)Add a commit to feature-1 branch
+From main go to new branch feature-1 using git checkout feature-1 command
+Stage changes made in README.md file using git add README.md command
+Commit the changes using git commit -m “new changes for commit in feature-1 branch”
+
+5)Add a commit to main branch
+Move to main branch from feature-1 branch using git checkout main command
+Stage the changes made in README.md by git add README.md command
+Commit the changes by git commit -m “<message>”
+
+6)Create another feature-2 branch from main
+Go to main branch using git checkout main 
+Create a branch from main using git branch feature-2
+
+7)Add a commit to main branch
+Stage the changes made in README.md file using git add README.md
+Commit the changes by git commit -m "new changes to be commited into main branch"
+
+8)Merge feature-1 to main
+To go to feature-1 branch use git checkout feature-1 command
+To get the latest changes from your remote main use git pull origin feature-1 command
+Now merge feature-1 to main using git rebase main command
+Handle merge conflict if any arises
+Now stage the latest change in your local main using git add README.md 
+Now commit using git commit -m "after merging feature-1 to main by accepting both changes” command
+Now push the changes to main branch using git push origin main command
+
+9)Add a commit to main branch
+New changes are stages using git add README.md command
+Commit the changes using git commit -m "new changes after merging feature-1 to main" command
+Push the changes to main branch using git push origin main command
+
+10)Add a commit to feature-2 branch
+Go to feature-2 branch using git checkout feature-2 command
+Stage new changes using git add README.md command 
+Commit using git commit -m "new changes in feature-2 branch" command
+Push changes to feature-2 branch using git push origin feature-2 command
+
+11)Merge feature-2 to main
+Go to main branch using git checkout main command
+Pull the latest changes from main using git pull origin main command
+Merge feature-2 to main using git merge feature-2 command and resolve merge conflict
+Stage the change using git add README.md command 
+
+12)Delete feature-1 and feature-2 branches
+Go to main branch using git checkout main command
+Delete feature-1 branch using git branch -d feature-1 command
+Delete feature-2 branch using git branch -d feature-2 command
+Check if they have deleted using git branch command
